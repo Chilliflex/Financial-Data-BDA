@@ -91,6 +91,7 @@ pip install -r requirements.txt
 
 
 
+---
+## Project Explaination
 
-
-
+This project implements a Financial Investment Analysis Pipeline that systematically extracts, transforms, analyzes, and visualizes investment-related data to provide actionable insights. The execution begins with loading the augmented financial dataset (Finance_data_augmented.csv) using either Apache Spark for large-scale processing or pandas for smaller datasets. The ETL pipeline (etl.py) performs data cleaning, handling missing values, transforming categorical variables, and aggregating data across key dimensions such as age groups, gender, risk profiles, and investment avenues. Once the data is processed, the visualization module (visualization.py) generates multiple dashboards and charts—including bar charts, single-page clean dashboards, and comprehensive multi-chart dashboards—using Matplotlib and Seaborn, highlighting investment trends and demographic patterns. The entire workflow is orchestrated through the main script (run.py), which ensures the ETL and visualization steps execute sequentially. The project supports efficient large-scale computation with Spark, while maintaining flexibility for smaller datasets with pandas, and produces optimized, reader-friendly visual outputs to aid financial analysts and investors in understanding patterns, making informed decisions, and identifying investment preferences across different demographics.
